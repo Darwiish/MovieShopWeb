@@ -14,13 +14,13 @@ namespace MovieStoreManagement.Controllers
         // GET: Movie
         public ActionResult Index()
         {
-            return System.Web.UI.WebControls.View(fac.GetMovieGateway().ReadAll());
+            return View(fac.GetMovieGateway().ReadAll());
         }
 
         [HttpGet]
         public ActionResult Create()
         {
-            ViewBag.GenreId = new SelectList(fac.GetMovieGateway().ReadAll(), "Id", "Name");
+            ViewBag.GenreId = new SelectList(fac.GetMovieGateway().ReadAll(), "Genre.Id", "Genre.Name");
             return View();
         }
 
@@ -42,9 +42,9 @@ namespace MovieStoreManagement.Controllers
         [HttpGet]
         public ActionResult Edit(int id)
         {
-            var movie = fac.GetMovieGateway().GetMovie();
-            ViewBag.GenreId = new SelectList(fac.GetMovieGateway().ReadAll(), "Id", "Name", movie);
-            return System.Web.UI.WebControls.View(movie);
+            var movie = fac.GetMovieGateway().Get(id);
+            ViewBag.GenreId = new SelectList(fac.GetMovieGateway().ReadAll(), "Genre.Id", "Genre.Name", movie);
+            return View(movie);
         }
 
         // POST: Movie/Edit
@@ -54,7 +54,7 @@ namespace MovieStoreManagement.Controllers
         {
             if (ModelState.IsValid)
             {
-                fac.GetMovieGateway().UpdateMovie(movie);
+                fac.GetMovieGateway().Edit(movie);
                 return RedirectToAction("Index");
             }
             ViewBag.GenreId = new SelectList(fac.GetMovieGateway().ReadAll(), "GenreId", "Name", movie);
@@ -66,8 +66,8 @@ namespace MovieStoreManagement.Controllers
         [HttpGet]
         public ActionResult Delete(int id)
         {
-            var movie = fac.GetMovieGateway().GetMovie(id);
-            return System.Web.UI.WebControls.View(movie);
+            var movie = fac.GetMovieGateway().Get(id);
+            return View(movie);
         }
         
         [HttpPost]
@@ -75,7 +75,7 @@ namespace MovieStoreManagement.Controllers
         {
             try
             {
-                fac.GetMovieGateway().DeleteMovie(id);
+                fac.GetMovieGateway().Delete(id);
                 return RedirectToAction("Index");
             }
             catch

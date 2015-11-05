@@ -1,5 +1,5 @@
-﻿using MoviesStoreProxy.Model;
-using MoviesStoreProxy.Repository;
+﻿using MovieStoreGateWay;
+using MovieStoreMVCDto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +13,7 @@ namespace MovieStoreManagement.Controllers
         Facade fac = new Facade();
         public ActionResult Index()
         {
-            return View(fac.GetGenryRepository().ReadAll());
+            return View(fac.GetGenerrGateway().ReadAll());
         }
 
         [HttpGet]
@@ -28,7 +28,7 @@ namespace MovieStoreManagement.Controllers
         {
             if (ModelState.IsValid)
             {
-                fac.GetGenryRepository().Add(genre);
+                fac.GetGenerrGateway().Add(genre);
                 return RedirectToAction("Index");
             }
             
@@ -39,7 +39,7 @@ namespace MovieStoreManagement.Controllers
         [HttpGet]
         public ActionResult Edit(int id)
         {
-            return View(fac.GetGenryRepository().GetGenre(id));
+            return View(fac.GetGenerrGateway().Get(id));
         }
 
         // POST: Genre/Edit/5
@@ -48,7 +48,7 @@ namespace MovieStoreManagement.Controllers
         {
             if (ModelState.IsValid)
             {
-                fac.GetGenryRepository().UpdateGenre(genre);
+                fac.GetGenerrGateway().Edit(genre);
                 return RedirectToAction("Index");
             }
                 return View();
@@ -57,7 +57,7 @@ namespace MovieStoreManagement.Controllers
         [HttpGet]
         public ActionResult Delete(int id)
         {
-            return View(fac.GetGenryRepository().GetGenre(id));
+            return View(fac.GetGenerrGateway().Get(id));
         }
 
         // POST: Genre/Delete/5
@@ -66,7 +66,7 @@ namespace MovieStoreManagement.Controllers
         {
             if (ModelState.IsValid)
             {
-                fac.GetGenryRepository().DeleteGenre(id);
+                fac.GetGenerrGateway().Delete(id);
                 return RedirectToAction("Index");
             }
 

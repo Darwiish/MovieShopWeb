@@ -25,7 +25,7 @@ namespace MovieWebDTO.DTOs
         [DataMember]
         public string TralierUrl { get; set; }
         [DataMember]
-        public virtual IEnumerable<OrderLineDto> OrderLines { get; set; }
+        public int GenreId { get; set; }
         [DataMember]
         public virtual GenreDto Genre { get; set; }
     }

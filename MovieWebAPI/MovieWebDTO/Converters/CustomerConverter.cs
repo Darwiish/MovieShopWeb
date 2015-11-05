@@ -16,10 +16,10 @@ namespace MovieWebDTO
                 Address = item.Address,
                 Email = item.Email
             };
-            //if (item.Orders != null)
-            //{
-            //    dto.Orders = new OrderConverter().Convert(item.Orders);
-            //}
+            if (item.Orders != null)
+            {
+                dto.Orders = new OrderConverter().Convert(item.Orders);
+            }
             return dto;
         }
 

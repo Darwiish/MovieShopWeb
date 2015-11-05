@@ -14,7 +14,6 @@ namespace MovieStoreMVCDto
         public double Price { get; set; }
         public string ImageUrl { get; set; }
         public string TralierUrl { get; set; }
-        public virtual IEnumerable<OrderLine> OrderLines { get; set; }
         public int GenreId { get; set; }
         public virtual Genre Genre { get; set; }
 

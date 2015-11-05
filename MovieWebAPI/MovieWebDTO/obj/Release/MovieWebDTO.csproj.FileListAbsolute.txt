@@ -1,0 +1,14 @@
+C:\Users\josef_000\Documents\MovieShopWeb\MovieWebAPI\MovieWebDTO\bin\Release\MovieWebDTO.dll.config
+C:\Users\josef_000\Documents\MovieShopWeb\MovieWebAPI\MovieWebDTO\bin\Release\MovieWebDTO.dll
+C:\Users\josef_000\Documents\MovieShopWeb\MovieWebAPI\MovieWebDTO\bin\Release\MovieWebDTO.pdb
+C:\Users\josef_000\Documents\MovieShopWeb\MovieWebAPI\MovieWebDTO\bin\Release\EntityFramework.dll
+C:\Users\josef_000\Documents\MovieShopWeb\MovieWebAPI\MovieWebDTO\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\josef_000\Documents\MovieShopWeb\MovieWebAPI\MovieWebDTO\bin\Release\MovieWebDAL.dll
+C:\Users\josef_000\Documents\MovieShopWeb\MovieWebAPI\MovieWebDTO\bin\Release\nunit.framework.dll
+C:\Users\josef_000\Documents\MovieShopWeb\MovieWebAPI\MovieWebDTO\bin\Release\MovieWebDAL.pdb
+C:\Users\josef_000\Documents\MovieShopWeb\MovieWebAPI\MovieWebDTO\bin\Release\EntityFramework.xml
+C:\Users\josef_000\Documents\MovieShopWeb\MovieWebAPI\MovieWebDTO\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\josef_000\Documents\MovieShopWeb\MovieWebAPI\MovieWebDTO\bin\Release\nunit.framework.xml
+C:\Users\josef_000\Documents\MovieShopWeb\MovieWebAPI\MovieWebDTO\obj\Release\MovieWebDTO.csprojResolveAssemblyReference.cache
+C:\Users\josef_000\Documents\MovieShopWeb\MovieWebAPI\MovieWebDTO\obj\Release\MovieWebDTO.dll
+C:\Users\josef_000\Documents\MovieShopWeb\MovieWebAPI\MovieWebDTO\obj\Release\MovieWebDTO.pdb

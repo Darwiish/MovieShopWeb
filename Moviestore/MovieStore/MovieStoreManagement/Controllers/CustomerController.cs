@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using MovieStoreGateWay;
+using MovieStoreMVCDto;
 
 namespace MovieStoreManagement.Controllers
 {
@@ -13,7 +14,7 @@ namespace MovieStoreManagement.Controllers
         Facade fac = new Facade();
         public ActionResult Index()
         {
-            return System.Web.UI.WebControls.View(fac.GetCustomer().ReadAll());
+            return View(fac.GetCustomerGateway().ReadAll());
         }
 
          
@@ -35,7 +36,7 @@ namespace MovieStoreManagement.Controllers
         {
             if (ModelState.IsValid)
             {
-                fac.GetCustomerRepository().Add(cus);
+                fac.GetCustomerGateway().Add(cus);
                 return RedirectToAction("Index");
             }
                 return View();
@@ -45,8 +46,8 @@ namespace MovieStoreManagement.Controllers
         [HttpGet]
         public ActionResult Edit(int id)
         {
-            var cus = fac.GetCustomerRepository().GetCustomer(id);
-            return System.Web.UI.WebControls.View(cus);
+            var cus = fac.GetCustomerGateway().Get(id);
+            return View(cus);
         }
 
         // POST: Customer/Edit
@@ -56,7 +57,7 @@ namespace MovieStoreManagement.Controllers
         {
             if (ModelState.IsValid)
             {
-                fac.GetCustomerRepository().UpdateCustomer(cus);
+                fac.GetCustomerGateway().Edit(cus);
                 return RedirectToAction("Index");
             }
             
@@ -67,8 +68,8 @@ namespace MovieStoreManagement.Controllers
         [HttpGet]
         public ActionResult Delete(int id)
         {
-            var cus = fac.GetCustomerRepository().GetCustomer(id);
-            return System.Web.UI.WebControls.View(cus);
+            var cus = fac.GetCustomerGateway().Get(id);
+            return View(cus);
         }
 
         // POST: Customer/Delete
@@ -77,7 +78,7 @@ namespace MovieStoreManagement.Controllers
         {
             if (ModelState.IsValid)
             {
-                fac.GetCustomerRepository().DeleteCustomer(id);
+                fac.GetCustomerGateway().Delete(id);
                 return RedirectToAction("Index");
             }
                 return View();

@@ -15,16 +15,16 @@ namespace MovieStoreGateWay.Services
             using (var client = new HttpClient())
             {
                 HttpResponseMessage response =
-                    client.GetAsync("http://localhost:4835/api/customer/").Result;
+                    client.GetAsync("http://localhost:23512/api/customer/").Result;
                 return response.Content.ReadAsAsync<IEnumerable<Customer>>().Result;
             }
         }
-        public Customer Get(Customer customer)
+        public Customer Get(int id)
         {
             using (var client = new HttpClient())
             {
                 HttpResponseMessage response =
-                    client.GetAsync("http://localhost:4835/api/customer/").Result;
+                    client.GetAsync("http://localhost:23512/api/customer/" + id).Result;
                 return response.Content.ReadAsAsync<Customer>().Result;
             }
         }
@@ -34,17 +34,17 @@ namespace MovieStoreGateWay.Services
             using (var client = new HttpClient())
             {
                 HttpResponseMessage response =
-                    client.PostAsJsonAsync("http://localhost:4835/api/customer/", customer).Result;
+                    client.PostAsJsonAsync("http://localhost:23512/api/customer/", customer).Result;
                 return response.Content.ReadAsAsync<Customer>().Result;
             }
         }
 
-        public Customer Delete(Customer customer)
+        public Customer Delete(int id)
         {
             using (var client = new HttpClient())
             {
                 HttpResponseMessage response =
-                    client.PostAsJsonAsync("http://localhost:4835/api/customer/", customer).Result;
+                    client.PostAsJsonAsync("http://localhost:23512/api/customer/", id).Result;
                 return response.Content.ReadAsAsync<Customer>().Result;
             }
         }
@@ -54,7 +54,7 @@ namespace MovieStoreGateWay.Services
             using (var client = new HttpClient())
             {
                 HttpResponseMessage response =
-                    client.PostAsJsonAsync("http://localhost:4835/api/customer/", customer).Result;
+                    client.PostAsJsonAsync("http://localhost:23512/api/customer/", customer).Result;
                 return response.Content.ReadAsAsync<Customer>().Result;
             }
         }

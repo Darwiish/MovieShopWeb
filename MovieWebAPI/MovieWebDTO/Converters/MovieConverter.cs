@@ -23,10 +23,6 @@ namespace MovieWebDTO
                 ImageUrl = item.ImageUrl,
                 TralierUrl = item.TralierUrl,
             };
-            if (item.OrderLines != null)
-            {
-                dto.OrderLines = new OrderLineConverter().Convert(item.OrderLines);
-            }
             if (item.Genre != null)
             {
                 dto.Genre = new GenreConverter().Convert(item.Genre);

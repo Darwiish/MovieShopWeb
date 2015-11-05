@@ -27,9 +27,8 @@ namespace MovieWebDAL.Model
         [DataMember]
         public string TralierUrl { get; set; }
         [DataMember]
-        public virtual IEnumerable<OrderLine> OrderLines { get; set; }
-        [DataMember]
         public Genre Genre { get; set; }
-        public object GenreId { get; internal set; }
+        [DataMember]
+        public int GenreId { get; set; }
     }
 }

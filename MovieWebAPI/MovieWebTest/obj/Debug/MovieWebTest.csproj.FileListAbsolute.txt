@@ -15,3 +15,6 @@ C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebTest\bin\Debug\Micr
 C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebTest\bin\Debug\EntityFramework.xml
 C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebTest\obj\Debug\MovieWebTest.dll
 C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebTest\obj\Debug\MovieWebTest.pdb
+C:\Users\josef_000\Documents\MovieShopWeb\MovieWebAPI\MovieWebTest\obj\Debug\MovieWebTest.csprojResolveAssemblyReference.cache
+C:\Users\josef_000\Documents\MovieShopWeb\MovieWebAPI\MovieWebTest\obj\Debug\MovieWebTest.dll
+C:\Users\josef_000\Documents\MovieShopWeb\MovieWebAPI\MovieWebTest\obj\Debug\MovieWebTest.pdb

@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using MovieShopAssignment.ViewModels;
-using MoviesStoreProxy.Model;
-using MoviesStoreProxy.Repository;
 
 namespace MovieShopAssignment.Repository
 {

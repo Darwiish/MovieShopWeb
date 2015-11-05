@@ -1,8 +1,8 @@
-﻿using System;
+﻿using MovieShopAssignment.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using MoviesStoreProxy.Model;
 
 namespace MovieShopAssignment.ViewModels
 {

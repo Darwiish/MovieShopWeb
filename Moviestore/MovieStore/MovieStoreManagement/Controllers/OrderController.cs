@@ -1,5 +1,4 @@
-﻿using MoviesStoreProxy.Model;
-using MoviesStoreProxy.Repository;
+﻿using MovieStoreGateWay;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +12,7 @@ namespace MovieStoreManagement.Controllers
         Facade fac = new Facade();
         public ActionResult Index(int id)
         {
-            return View(fac.GetOrderRepository().GetOrders(id));
+            return View(/*fac.GetOrdereGateway().GetOrders(id)*/);
         }
 
         // GET: Order/Details
@@ -25,7 +24,7 @@ namespace MovieStoreManagement.Controllers
         // GET: Order/Delete
         public ActionResult Delete(int id)
         {
-            var order = fac.GetOrderRepository().GetOrder(id);
+            var order = fac.GetOrdereGateway().Get(id);
             return View(order);
         }
 
@@ -35,7 +34,7 @@ namespace MovieStoreManagement.Controllers
         {
             if(ModelState.IsValid)
             {
-                fac.GetOrderRepository().DeleteOrder(Id);
+                fac.GetOrdereGateway().Delete(Id);
                 return RedirectToAction("Index", new {id = Id });
             }
                 return View();
