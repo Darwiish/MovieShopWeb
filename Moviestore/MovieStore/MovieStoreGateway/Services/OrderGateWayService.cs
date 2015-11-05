@@ -25,7 +25,7 @@ namespace MovieStoreGateWay.Services
             using (var client = new HttpClient())
             {
                 HttpResponseMessage response =
-                    client.PostAsJsonAsync("http://localhost:23512/api/order/", id).Result;
+                    client.DeleteAsync("http://localhost:23512/api/order/" + id).Result;
                 return response.Content.ReadAsAsync<Order>().Result;
             }
         }
@@ -35,7 +35,7 @@ namespace MovieStoreGateWay.Services
             using (var client = new HttpClient())
             {
                 HttpResponseMessage response =
-                    client.PostAsJsonAsync("http://localhost:23512/api/order/", t).Result;
+                    client.PutAsJsonAsync("http://localhost:23512/api/order/", t).Result;
                 return response.Content.ReadAsAsync<Order>().Result;
             }
         }
@@ -56,6 +56,16 @@ namespace MovieStoreGateWay.Services
             {
                 HttpResponseMessage response =
                     client.GetAsync("http://localhost:23512/api/order/").Result;
+                return response.Content.ReadAsAsync<IEnumerable<Order>>().Result;
+            }
+        }
+
+        public IEnumerable<Order> ReadAll(int id)
+        {
+            using (var client = new HttpClient())
+            {
+                HttpResponseMessage response =
+                    client.GetAsync("http://localhost:23512/api/order/"+id).Result;
                 return response.Content.ReadAsAsync<IEnumerable<Order>>().Result;
             }
         }

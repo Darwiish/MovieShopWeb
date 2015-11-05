@@ -25,7 +25,7 @@ namespace MovieStoreGateWay.Services
             using (var client = new HttpClient())
             {
                 HttpResponseMessage response =
-                    client.PostAsJsonAsync("http://localhost:23512/api/genre/", id).Result;
+                    client.DeleteAsync("http://localhost:23512/api/genre/" +id).Result;
                 return response.Content.ReadAsAsync<Genre>().Result;
             }
         }
@@ -35,7 +35,7 @@ namespace MovieStoreGateWay.Services
             using (var client = new HttpClient())
             {
                 HttpResponseMessage response =
-                    client.PostAsJsonAsync("http://localhost:23512/api/genre/", t).Result;
+                    client.PutAsJsonAsync("http://localhost:23512/api/genre/", t).Result;
                 return response.Content.ReadAsAsync<Genre>().Result;
             }
         }
