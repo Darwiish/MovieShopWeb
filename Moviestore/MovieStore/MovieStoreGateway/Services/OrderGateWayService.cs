@@ -15,17 +15,17 @@ namespace MovieStoreGateWay.Services
             using (var client = new HttpClient())
             {
                 HttpResponseMessage response =
-                    client.PostAsJsonAsync("http://localhost:4835/api/order/", t).Result;
+                    client.PostAsJsonAsync("http://localhost:23512/api/order/", t).Result;
                 return response.Content.ReadAsAsync<Order>().Result;
             }
         }
 
-        public Order Delete(Order t)
+        public Order Delete(int id)
         {
             using (var client = new HttpClient())
             {
                 HttpResponseMessage response =
-                    client.PostAsJsonAsync("http://localhost:4835/api/order/", t).Result;
+                    client.PostAsJsonAsync("http://localhost:23512/api/order/", id).Result;
                 return response.Content.ReadAsAsync<Order>().Result;
             }
         }
@@ -35,17 +35,17 @@ namespace MovieStoreGateWay.Services
             using (var client = new HttpClient())
             {
                 HttpResponseMessage response =
-                    client.PostAsJsonAsync("http://localhost:4835/api/order/", t).Result;
+                    client.PostAsJsonAsync("http://localhost:23512/api/order/", t).Result;
                 return response.Content.ReadAsAsync<Order>().Result;
             }
         }
 
-        public Order Get(Order t)
+        public Order Get(int id)
         {
             using (var client = new HttpClient())
             {
                 HttpResponseMessage response =
-                    client.GetAsync("http://localhost:4835/api/order/").Result;
+                    client.GetAsync("http://localhost:23512/api/order/"+id).Result;
                 return response.Content.ReadAsAsync<Order>().Result;
             }
         }
@@ -55,7 +55,7 @@ namespace MovieStoreGateWay.Services
             using (var client = new HttpClient())
             {
                 HttpResponseMessage response =
-                    client.GetAsync("http://localhost:4835/api/order/").Result;
+                    client.GetAsync("http://localhost:23512/api/order/").Result;
                 return response.Content.ReadAsAsync<IEnumerable<Order>>().Result;
             }
         }
