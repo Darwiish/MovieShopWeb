@@ -1,0 +1,12 @@
+C:\Users\Darwiish\Desktop\MovieWebAPI\MovieWebDAL\bin\Debug\MovieWebDAL.dll.config
+C:\Users\Darwiish\Desktop\MovieWebAPI\MovieWebDAL\bin\Debug\MovieWebDAL.dll
+C:\Users\Darwiish\Desktop\MovieWebAPI\MovieWebDAL\bin\Debug\MovieWebDAL.pdb
+C:\Users\Darwiish\Desktop\MovieWebAPI\MovieWebDAL\bin\Debug\EntityFramework.dll
+C:\Users\Darwiish\Desktop\MovieWebAPI\MovieWebDAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Darwiish\Desktop\MovieWebAPI\MovieWebDAL\bin\Debug\EntityFramework.xml
+C:\Users\Darwiish\Desktop\MovieWebAPI\MovieWebDAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Darwiish\Desktop\MovieWebAPI\MovieWebDAL\obj\Debug\MovieWebDAL.dll
+C:\Users\Darwiish\Desktop\MovieWebAPI\MovieWebDAL\obj\Debug\MovieWebDAL.pdb
+C:\Users\Darwiish\Desktop\MovieWebAPI\MovieWebDAL\obj\Debug\MovieWebDAL.csprojResolveAssemblyReference.cache
+C:\Users\Darwiish\Desktop\MovieWebAPI\MovieWebDAL\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Darwiish\Desktop\MovieWebAPI\MovieWebDAL\bin\Debug\MySql.Data.dll

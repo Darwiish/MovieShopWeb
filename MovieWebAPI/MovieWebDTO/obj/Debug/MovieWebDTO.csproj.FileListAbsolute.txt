@@ -1,0 +1,14 @@
+C:\Users\Darwiish\Desktop\MovieWebAPI\MovieWebDTO\obj\Debug\MovieWebDTO.csprojResolveAssemblyReference.cache
+C:\Users\Darwiish\Desktop\MovieWebAPI\MovieWebDTO\bin\Debug\MovieWebDTO.dll.config
+C:\Users\Darwiish\Desktop\MovieWebAPI\MovieWebDTO\bin\Debug\MovieWebDTO.dll
+C:\Users\Darwiish\Desktop\MovieWebAPI\MovieWebDTO\bin\Debug\MovieWebDTO.pdb
+C:\Users\Darwiish\Desktop\MovieWebAPI\MovieWebDTO\bin\Debug\EntityFramework.dll
+C:\Users\Darwiish\Desktop\MovieWebAPI\MovieWebDTO\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Darwiish\Desktop\MovieWebAPI\MovieWebDTO\bin\Debug\MovieWebDAL.dll
+C:\Users\Darwiish\Desktop\MovieWebAPI\MovieWebDTO\bin\Debug\MovieWebDAL.pdb
+C:\Users\Darwiish\Desktop\MovieWebAPI\MovieWebDTO\bin\Debug\EntityFramework.xml
+C:\Users\Darwiish\Desktop\MovieWebAPI\MovieWebDTO\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Darwiish\Desktop\MovieWebAPI\MovieWebDTO\obj\Debug\MovieWebDTO.dll
+C:\Users\Darwiish\Desktop\MovieWebAPI\MovieWebDTO\obj\Debug\MovieWebDTO.pdb
+C:\Users\Darwiish\Desktop\MovieWebAPI\MovieWebDTO\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Darwiish\Desktop\MovieWebAPI\MovieWebDTO\bin\Debug\MySql.Data.dll
