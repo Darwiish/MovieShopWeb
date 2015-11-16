@@ -1,1 +1,17 @@
 C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebTest\obj\Debug\MovieWebTest.csprojResolveAssemblyReference.cache
+C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebTest\bin\Debug\MovieWebTest.dll
+C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebTest\bin\Debug\MovieWebTest.pdb
+C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebTest\bin\Debug\MovieWebDAL.dll
+C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebTest\bin\Debug\nunit.core.dll
+C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebTest\bin\Debug\nunit.core.interfaces.dll
+C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebTest\bin\Debug\nunit.framework.dll
+C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebTest\bin\Debug\nunit.util.dll
+C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebTest\bin\Debug\NUnit.VisualStudio.TestAdapter.dll
+C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebTest\bin\Debug\EntityFramework.dll
+C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebTest\bin\Debug\MovieWebDAL.pdb
+C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebTest\bin\Debug\nunit.framework.xml
+C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebTest\bin\Debug\EntityFramework.xml
+C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebTest\obj\Debug\MovieWebTest.dll
+C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebTest\obj\Debug\MovieWebTest.pdb
