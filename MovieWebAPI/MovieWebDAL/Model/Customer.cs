@@ -18,7 +18,7 @@ namespace MovieWebDAL.Model
         public string Address { get; set; }
         public string Email { get; set; }
 
-        public virtual IEnumerable<Order> Orders { get; set; }
+    //    public virtual IEnumerable<Order> Orders { get; set; }
 
     }
 }

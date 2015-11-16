@@ -13,8 +13,6 @@ C:\Users\Darwiish\Desktop\MovieWebAPI\MovieWebDAL\bin\Debug\MySql.Data.dll
 C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebDAL\bin\Debug\MovieWebDAL.dll.config
 C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebDAL\bin\Debug\MovieWebDAL.dll
 C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebDAL\bin\Debug\MovieWebDAL.pdb
-C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebDAL\bin\Debug\MovieWebDAL.dll.CodeAnalysisLog.xml
-C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebDAL\bin\Debug\MovieWebDAL.dll.lastcodeanalysissucceeded
 C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebDAL\bin\Debug\EntityFramework.dll
 C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebDAL\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebDAL\bin\Debug\MySql.Data.Entity.EF6.dll

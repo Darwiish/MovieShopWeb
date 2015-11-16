@@ -20,7 +20,7 @@ namespace MovieWebDTO.DTOs
         [DataMember]
         public string Email { get; set; }
 
-        [DataMember]
-        public virtual IEnumerable<OrderDto> Orders { get; set; }
+        //[DataMember]
+       // public virtual IEnumerable<OrderDto> Orders { get; set; }
     }
 }

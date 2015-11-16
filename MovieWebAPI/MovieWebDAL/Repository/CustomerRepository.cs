@@ -43,7 +43,7 @@ namespace MovieWebDAL.Repository
                 m.LastName = customer.LastName;
                 m.Address = customer.Address;
                 m.Email = customer.Email;
-                m.Orders = customer.Orders;
+               // m.Orders = customer.Orders;
                 ctx.SaveChanges();
             }
         }
