@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieWebDAL", "MovieWebDAL\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieWebDTO", "MovieWebDTO\MovieWebDTO.csproj", "{3063BBEE-3FEC-4C3A-9D91-C3DA6CD0B1AC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieWebTest", "MovieWebTest\MovieWebTest.csproj", "{A3DB3EB7-7B34-4C1E-ABB5-EBE1AF571799}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3063BBEE-3FEC-4C3A-9D91-C3DA6CD0B1AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3063BBEE-3FEC-4C3A-9D91-C3DA6CD0B1AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3063BBEE-3FEC-4C3A-9D91-C3DA6CD0B1AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3DB3EB7-7B34-4C1E-ABB5-EBE1AF571799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3DB3EB7-7B34-4C1E-ABB5-EBE1AF571799}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3DB3EB7-7B34-4C1E-ABB5-EBE1AF571799}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3DB3EB7-7B34-4C1E-ABB5-EBE1AF571799}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
