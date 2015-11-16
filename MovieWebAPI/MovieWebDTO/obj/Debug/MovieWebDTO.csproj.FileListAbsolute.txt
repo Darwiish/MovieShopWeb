@@ -15,8 +15,6 @@ C:\Users\Darwiish\Desktop\MovieWebAPI\MovieWebDTO\bin\Debug\MySql.Data.dll
 C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebDTO\bin\Debug\MovieWebDTO.dll.config
 C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebDTO\bin\Debug\MovieWebDTO.dll
 C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebDTO\bin\Debug\MovieWebDTO.pdb
-C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebDTO\bin\Debug\MovieWebDTO.dll.CodeAnalysisLog.xml
-C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebDTO\bin\Debug\MovieWebDTO.dll.lastcodeanalysissucceeded
 C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebDTO\bin\Debug\EntityFramework.dll
 C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebDTO\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebDTO\bin\Debug\MovieWebDAL.dll
