@@ -21,5 +21,6 @@ namespace MovieWebDAL.Model
         [DataMember]
         public virtual IEnumerable<Movie> Movies { get; set; }
 
+       
     }
 }

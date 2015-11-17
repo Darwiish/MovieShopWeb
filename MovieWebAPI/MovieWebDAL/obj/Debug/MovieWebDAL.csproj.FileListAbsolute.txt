@@ -22,3 +22,5 @@ C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebDAL\bin\Debug\Entit
 C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebDAL\obj\Debug\MovieWebDAL.csprojResolveAssemblyReference.cache
 C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebDAL\obj\Debug\MovieWebDAL.dll
 C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebDAL\obj\Debug\MovieWebDAL.pdb
+C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebDAL\bin\Debug\nunit.framework.dll
+C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebDAL\bin\Debug\nunit.framework.xml

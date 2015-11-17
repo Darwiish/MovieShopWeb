@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MovieWebDAL.Context;
 
 namespace MovieWebDAL.Repository
 {
@@ -53,6 +54,16 @@ namespace MovieWebDAL.Repository
         }
 
         private OrderLineRepository orderLineRepo;
+        private MovieWebContext movieWebContext;
+
+        public Facade(MovieWebContext movieWebContext)
+        {
+            this.movieWebContext = movieWebContext;
+        }
+
+        public Facade()
+        {
+        }
 
         public OrderLineRepository GetOrderLineRepository()
         {

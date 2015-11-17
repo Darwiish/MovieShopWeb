@@ -164,3 +164,5 @@ C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebAPI\bin\System.Web.
 C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebAPI\obj\Debug\MovieWebAPI.csprojResolveAssemblyReference.cache
 C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebAPI\obj\Debug\MovieWebAPI.dll
 C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebAPI\obj\Debug\MovieWebAPI.pdb
+C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebAPI\bin\nunit.framework.dll
+C:\Users\Darwiish\Documents\MovieShopWeb\MovieWebAPI\MovieWebAPI\bin\nunit.framework.xml
