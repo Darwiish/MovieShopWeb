@@ -13,17 +13,23 @@ namespace MovieWebAPI.Controllers
 {
     public class CustomerController : ApiController
     {
-         Facade facade = new Facade();
-       
-        /// Will get all Customer from database 
+        Facade facade = new Facade();
+
+        /// <summary>
+        /// Will get all Customer from database.
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<CustomerDto> GetAll()
         {
             var customer = new Facade().GetCustomerRepository().ReadAll();
             return new CustomerConverter().Convert(customer);
         }
 
-        
+        /// <summary>
         /// Will get a specific Customer found by the Id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public HttpResponseMessage Get(int id)
         {
             var customer = new Facade().GetCustomerRepository().Get(id);
@@ -40,14 +46,18 @@ namespace MovieWebAPI.Controllers
             throw new HttpResponseException(response);
         }
 
-        
+
+        /// <summary>
         /// Creates a Customer in the Database
+        /// </summary>
+        /// <param name="customer"></param>
+        /// <returns></returns>
         public HttpResponseMessage Post(CustomerDto customerDto)
         {
             try
             {
                 var customer = new CustomerConverter().Convert(customerDto);
-                 facade.GetCustomerRepository().Add(customer);
+                facade.GetCustomerRepository().Add(customer);
 
                 var response = Request.CreateResponse<CustomerDto>(HttpStatusCode.Created, customerDto);
                 var uri = Url.Link("GetCustomerById", new { customer.Id });
@@ -62,8 +72,12 @@ namespace MovieWebAPI.Controllers
                 };
                 throw new HttpResponseException(response);
             }
-        }    
+        }
+        /// <summary>
         /// Updates a Customer in Database
+        /// </summary>
+        /// <param name="customer"></param>
+        /// <returns></returns>
         public HttpResponseMessage Put(CustomerDto customerDto)
         {
             try
@@ -84,8 +98,11 @@ namespace MovieWebAPI.Controllers
                 throw new HttpResponseException(response);
             }
         }
-        
+
+        /// <summary>
         /// Delete a Customer in database
+        /// </summary>
+        /// <param name="id"></param>
         public HttpResponseMessage Delete(int id)
         {
             facade.GetCustomerRepository().Delete(id);

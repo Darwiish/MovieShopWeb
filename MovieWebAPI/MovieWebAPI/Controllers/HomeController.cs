@@ -15,6 +15,11 @@ namespace MovieWebAPI.Controllers
     {
         private Facade facade = new Facade();
 
+        /// <summary>
+        /// No Movie
+        /// </summary>
+        /// <param ></param>
+        /// <returns></returns>
         public ActionResult Index()
         {
             ViewBag.Title = "Home Page";

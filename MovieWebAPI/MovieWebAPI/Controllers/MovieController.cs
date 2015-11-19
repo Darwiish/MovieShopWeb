@@ -15,18 +15,25 @@ namespace MovieWebAPI.Controllers
     {
         Facade facade = new Facade();
 
-       /// Will get all Movie from database 
+        /// <summary>
+        /// Will get all Movie from database.
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IEnumerable<MovieDto> GetMovies()
        {
            var movies = new Facade().GetMovieRepository().ReadAll();
            return new MovieConverter().Convert(movies);
        }
+        /// <summary>
         /// Will get a specific Movie found by the Id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public HttpResponseMessage Get(int id)
         {
             var movie = new Facade().GetMovieRepository().Get(id);
-            MovieDto movieDto = null;//Declare a variable
+            MovieDto movieDto = null;
             if (movie != null)
             {
                 movieDto = new MovieConverter().Convert(movie);
@@ -40,7 +47,11 @@ namespace MovieWebAPI.Controllers
         }
 
 
-        /// Creates a Customer in the Database
+        /// <summary>
+        /// Creates a Movie in the Database
+        /// </summary>
+        /// <param name="movie"></param>
+        /// <returns></returns>
         public HttpResponseMessage Post(MovieDto movieDto)
         {
             try
@@ -62,7 +73,11 @@ namespace MovieWebAPI.Controllers
                 throw new HttpResponseException(response);
             }
         }
+        /// <summary>
         /// Updates a Movie in Database
+        /// </summary>
+        /// <param name="movie"></param>
+        /// <returns></returns>
         public HttpResponseMessage Put(MovieDto movieDto)
         {
             try
@@ -84,7 +99,10 @@ namespace MovieWebAPI.Controllers
             }
         }
 
+        /// <summary>
         /// Delete a Movie in database
+        /// </summary>
+        /// <param name="id"></param>
         public HttpResponseMessage Delete(int id)
         {
             facade.GetMovieRepository().Delete(id);

@@ -15,18 +15,25 @@ namespace MovieWebAPI.Controllers
     {
         Facade facade = new Facade();
 
-        /// Will get all Order from database.
+        /// <summary>
+        /// Will get all Order from database
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<OrderDto> GetAll()
         {
             var order = new Facade().GetOrderRepository().ReadAll();
             return new OrderConverter().Convert(order);
         }
 
-        /// Will get a specific Order found by the Id       
+        /// <summary>
+        /// Will get a specific Order from database.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>    
         public HttpResponseMessage Get(int id)
         {
             var order = new Facade().GetOrderRepository().Get(id);
-            OrderDto orderDto = null;//Declare a variable
+            OrderDto orderDto = null;
             if (order != null)
             {
                 orderDto = new OrderConverter().Convert(order);
@@ -39,7 +46,11 @@ namespace MovieWebAPI.Controllers
             throw new HttpResponseException(response);
         }
 
-        /// Creates a Order in the Database
+        /// <summary>
+        /// Creates a Order in database.
+        /// </summary>
+        /// <param name="order"></param>
+        /// <returns></returns>
         public HttpResponseMessage Post(OrderDto orderDto)
         {
             try
@@ -62,7 +73,11 @@ namespace MovieWebAPI.Controllers
             }
         }
 
-        /// Updates a Order in Database
+        /// <summary>
+        /// Updates a Order from database.
+        /// </summary>
+        /// <param name="order"></param>
+        /// <returns></returns>
         public HttpResponseMessage Put(OrderDto orderDto)
         {
             try
@@ -84,7 +99,11 @@ namespace MovieWebAPI.Controllers
             }
         }
 
-        /// Delete a Order in database
+        /// <summary>
+        /// Deletes a Order in database.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public HttpResponseMessage Delete(int id)
         {
             facade.GetOrderRepository().Delete(id);

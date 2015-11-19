@@ -15,18 +15,25 @@ namespace MovieWebAPI.Controllers
     {
         Facade facade = new Facade();
 
-        /// Will get all OrderLine from database.
+        /// <summary>
+        /// Will get all Orderlines from database
+        /// </summary>
+        /// <returns>
+        /// </returns>
         public IEnumerable<OrderLineDto> GetAll()
         {
             var orderLine = new Facade().GetOrderLineRepository().ReadAll();
             return new OrderLineConverter().Convert(orderLine);
         }
-
-        /// Will get a specific OrderLine found by the Id       
+        /// <summary>
+        /// Will get a specific Orderline found by the Id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>   
         public HttpResponseMessage Get(int id)
         {
             var orderLine = new Facade().GetOrderLineRepository().Get(id);
-            OrderLineDto orderLineDto = null;//Declare a variable
+            OrderLineDto orderLineDto = null;
             if (orderLine != null)
             {
                 orderLineDto = new OrderLineConverter().Convert(orderLine);
@@ -39,7 +46,11 @@ namespace MovieWebAPI.Controllers
             throw new HttpResponseException(response);
         }
 
-        /// Creates a Order in the Database
+        /// <summary>
+        /// Creates a Orderline
+        /// </summary>
+        /// <param name="orderLine"></param>
+        /// <returns></returns>
         public HttpResponseMessage Post(OrderLineDto orderLineDto)
         {
             try
@@ -62,7 +73,11 @@ namespace MovieWebAPI.Controllers
             }
         }
 
-        /// Updates a Order in Database
+        /// <summary>
+        /// Updates a Orderline
+        /// </summary>
+        /// <param name="orderLine"></param>
+        /// <returns></returns>
         public HttpResponseMessage Put(OrderLineDto orderLineDto)
         {
             try
@@ -84,7 +99,11 @@ namespace MovieWebAPI.Controllers
             }
         }
 
-        /// Delete a OrderLine in database
+        /// <summary>
+        /// Deletes a Orderline
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public HttpResponseMessage Delete(int id)
         {
             facade.GetOrderLineRepository().Delete(id);

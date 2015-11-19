@@ -14,19 +14,25 @@ namespace MovieWebAPI.Controllers
     public class GenreController : ApiController
     {
         Facade facade = new Facade();
-      
+
+        /// <summary>
         /// Will get all Genre from database.
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<GenreDto> GetAll()
         {
             var genre = new Facade().GetGenryRepository().ReadAll();
             return new GenreConverter().Convert(genre);
         }
-
-        /// Will get a specific Genre found by the Id       
+        /// <summary>
+        /// Will get a specific Genre found by the Id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>    
         public HttpResponseMessage Get(int id)
         {
             var genre = new Facade().GetGenryRepository().Get(id);
-            GenreDto genreDto = null;//Declare a variable
+            GenreDto genreDto = null;
             if (genre != null)
             {
                 genreDto = new GenreConverter().Convert(genre);
@@ -39,7 +45,11 @@ namespace MovieWebAPI.Controllers
             throw new HttpResponseException(response);
         }
 
+        /// <summary>
         /// Creates a Genre in the Database
+        /// </summary>
+        /// <param name="genre"></param>
+        /// <returns></returns>
         public HttpResponseMessage Post(GenreDto genreDto)
         {
             try
@@ -62,6 +72,11 @@ namespace MovieWebAPI.Controllers
             }
         }
 
+        /// <summary>
+        /// Updates a Genre in Database
+        /// </summary>
+        /// <param name="genre"></param>
+        /// <returns></returns>
         /// Updates a Genre in Database
         public HttpResponseMessage Put(GenreDto genreDto)
         {
@@ -83,8 +98,11 @@ namespace MovieWebAPI.Controllers
                 throw new HttpResponseException(response);
             }
         }
-       
+
+        /// <summary>
         /// Delete a Genre in database
+        /// </summary>
+        /// <param name="id"></param>
         public HttpResponseMessage Delete(int id)
         {
             facade.GetGenryRepository().Delete(id);

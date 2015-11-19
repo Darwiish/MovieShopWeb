@@ -10,29 +10,49 @@ namespace MovieWebAPI.Controllers
     [Authorize]
     public class ValuesController : ApiController
     {
-        // GET api/values
+        /// <summary>
+        /// No Movie
+        /// </summary>
+        /// <param ></param>
+        /// <returns></returns>
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
         }
 
-        // GET api/values/5
+        /// <summary>
+        /// No Movie
+        /// </summary>
+        /// <param ></param>
+        /// <returns></returns>
         public string Get(int id)
         {
             return "value";
         }
 
-        // POST api/values
+        /// <summary>
+        /// No Movie
+        /// </summary>
+        /// <param ></param>
+        /// <returns></returns>
         public void Post([FromBody]string value)
         {
         }
 
-        // PUT api/values/5
+        /// <summary>
+        /// No Movie
+        /// </summary>
+        /// <param ></param>
+        /// <returns></returns>
         public void Put(int id, [FromBody]string value)
         {
         }
 
-        // DELETE api/values/5
+        /// <summary>
+        /// No Movie
+        /// </summary>
+        /// <param ></param>
+        /// <returns></returns>
         public void Delete(int id)
         {
         }

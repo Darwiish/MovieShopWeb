@@ -19,6 +19,11 @@ using MovieWebAPI.Results;
 
 namespace MovieWebAPI.Controllers
 {
+    /// <summary>
+    /// No Movie
+    /// </summary>
+    /// <param ></param>
+    /// <returns></returns>
     [Authorize]
     [RoutePrefix("api/Account")]
     public class AccountController : ApiController
@@ -29,14 +34,22 @@ namespace MovieWebAPI.Controllers
         public AccountController()
         {
         }
-
+        /// <summary>
+        /// No Movie
+        /// </summary>
+        /// <param ></param>
+        /// <returns></returns>
         public AccountController(ApplicationUserManager userManager,
             ISecureDataFormat<AuthenticationTicket> accessTokenFormat)
         {
             UserManager = userManager;
             AccessTokenFormat = accessTokenFormat;
         }
-
+        /// <summary>
+        /// No Movie
+        /// </summary>
+        /// <param ></param>
+        /// <returns></returns>
         public ApplicationUserManager UserManager
         {
             get
@@ -48,10 +61,18 @@ namespace MovieWebAPI.Controllers
                 _userManager = value;
             }
         }
-
+        /// <summary>
+        /// No Movie
+        /// </summary>
+        /// <param ></param>
+        /// <returns></returns>
         public ISecureDataFormat<AuthenticationTicket> AccessTokenFormat { get; private set; }
 
-        // GET api/Account/UserInfo
+        /// <summary>
+        /// No Movie
+        /// </summary>
+        /// <param ></param>
+        /// <returns></returns>
         [HostAuthentication(DefaultAuthenticationTypes.ExternalBearer)]
         [Route("UserInfo")]
         public UserInfoViewModel GetUserInfo()
@@ -66,7 +87,11 @@ namespace MovieWebAPI.Controllers
             };
         }
 
-        // POST api/Account/Logout
+        /// <summary>
+        /// No Movie
+        /// </summary>
+        /// <param ></param>
+        /// <returns></returns>
         [Route("Logout")]
         public IHttpActionResult Logout()
         {
@@ -74,7 +99,11 @@ namespace MovieWebAPI.Controllers
             return Ok();
         }
 
-        // GET api/Account/ManageInfo?returnUrl=%2F&generateState=true
+        /// <summary>
+        /// No Movie
+        /// </summary>
+        /// <param ></param>
+        /// <returns></returns>
         [Route("ManageInfo")]
         public async Task<ManageInfoViewModel> GetManageInfo(string returnUrl, bool generateState = false)
         {
@@ -114,7 +143,11 @@ namespace MovieWebAPI.Controllers
             };
         }
 
-        // POST api/Account/ChangePassword
+        /// <summary>
+        /// No Movie
+        /// </summary>
+        /// <param ></param>
+        /// <returns></returns>
         [Route("ChangePassword")]
         public async Task<IHttpActionResult> ChangePassword(ChangePasswordBindingModel model)
         {
@@ -134,7 +167,11 @@ namespace MovieWebAPI.Controllers
             return Ok();
         }
 
-        // POST api/Account/SetPassword
+        /// <summary>
+        /// No Movie
+        /// </summary>
+        /// <param ></param>
+        /// <returns></returns>
         [Route("SetPassword")]
         public async Task<IHttpActionResult> SetPassword(SetPasswordBindingModel model)
         {
@@ -153,7 +190,11 @@ namespace MovieWebAPI.Controllers
             return Ok();
         }
 
-        // POST api/Account/AddExternalLogin
+        /// <summary>
+        /// No Movie
+        /// </summary>
+        /// <param ></param>
+        /// <returns></returns>
         [Route("AddExternalLogin")]
         public async Task<IHttpActionResult> AddExternalLogin(AddExternalLoginBindingModel model)
         {
@@ -191,7 +232,11 @@ namespace MovieWebAPI.Controllers
             return Ok();
         }
 
-        // POST api/Account/RemoveLogin
+        /// <summary>
+        /// No Movie
+        /// </summary>
+        /// <param ></param>
+        /// <returns></returns>
         [Route("RemoveLogin")]
         public async Task<IHttpActionResult> RemoveLogin(RemoveLoginBindingModel model)
         {
@@ -220,7 +265,11 @@ namespace MovieWebAPI.Controllers
             return Ok();
         }
 
-        // GET api/Account/ExternalLogin
+        /// <summary>
+        /// No Movie
+        /// </summary>
+        /// <param ></param>
+        /// <returns></returns>
         [OverrideAuthentication]
         [HostAuthentication(DefaultAuthenticationTypes.ExternalCookie)]
         [AllowAnonymous]
@@ -277,7 +326,11 @@ namespace MovieWebAPI.Controllers
             return Ok();
         }
 
-        // GET api/Account/ExternalLogins?returnUrl=%2F&generateState=true
+        /// <summary>
+        /// No Movie
+        /// </summary>
+        /// <param ></param>
+        /// <returns></returns>
         [AllowAnonymous]
         [Route("ExternalLogins")]
         public IEnumerable<ExternalLoginViewModel> GetExternalLogins(string returnUrl, bool generateState = false)
@@ -318,7 +371,11 @@ namespace MovieWebAPI.Controllers
             return logins;
         }
 
-        // POST api/Account/Register
+        /// <summary>
+        /// No Movie
+        /// </summary>
+        /// <param ></param>
+        /// <returns></returns>
         [AllowAnonymous]
         [Route("Register")]
         public async Task<IHttpActionResult> Register(RegisterBindingModel model)
@@ -340,7 +397,11 @@ namespace MovieWebAPI.Controllers
             return Ok();
         }
 
-        // POST api/Account/RegisterExternal
+        /// <summary>
+        /// No Movie
+        /// </summary>
+        /// <param ></param>
+        /// <returns></returns>
         [OverrideAuthentication]
         [HostAuthentication(DefaultAuthenticationTypes.ExternalBearer)]
         [Route("RegisterExternal")]
