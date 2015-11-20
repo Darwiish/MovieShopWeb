@@ -1,4 +1,4 @@
-﻿using MoviesStoreProxy.Model;
+﻿using MovieStoreMVCDto;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;

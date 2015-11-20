@@ -79,6 +79,12 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MovieStoreMVCDto\MovieStoreMVCDto.csproj">
+      <Project>{5b42a314-85c0-4cc7-baf0-cc6505a04be7}</Project>
+      <Name>MovieStoreMVCDto</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

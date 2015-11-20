@@ -48,11 +48,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Customer.cs" />
-    <Compile Include="Genre.cs" />
-    <Compile Include="Movie.cs" />
-    <Compile Include="Order.cs" />
-    <Compile Include="OrderLine.cs" />
+    <Compile Include="Model\Customer.cs" />
+    <Compile Include="Model\Genre.cs" />
+    <Compile Include="Model\Movie.cs" />
+    <Compile Include="Model\Order.cs" />
+    <Compile Include="Model\OrderLine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
