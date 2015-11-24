@@ -33,7 +33,7 @@ namespace MovieWebAPI.Controllers
         public HttpResponseMessage Get(int id)
         {
             var customer = new Facade().GetCustomerRepository().Get(id);
-            CustomerDto customerDto = null;//Declare a variable
+            CustomerDto customerDto = null;
             if (customer != null)
             {
                 customerDto = new CustomerConverter().Convert(customer);
