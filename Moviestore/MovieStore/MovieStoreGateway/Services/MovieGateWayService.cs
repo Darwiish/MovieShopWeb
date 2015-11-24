@@ -15,16 +15,16 @@ namespace MovieStoreGateWay.Services
             using (var client = new HttpClient())
             {
                 HttpResponseMessage response =
-                    client.GetAsync("http://localhost:4835/api/movie/").Result;
+                    client.GetAsync("http://localhost:23512/api/movie/").Result;
                 return response.Content.ReadAsAsync<IEnumerable<Movie>>().Result;
             }
         }
-        public Movie Get(Movie movie)
+        public Movie Get(int id)
         {
             using (var client = new HttpClient())
             {
                 HttpResponseMessage response =
-                    client.GetAsync("http://localhost:4835/api/movie/").Result;
+                    client.GetAsync("http://localhost:23512/api/movie/" + id).Result;
                 return response.Content.ReadAsAsync<Movie>().Result;
             }
         }
@@ -33,7 +33,7 @@ namespace MovieStoreGateWay.Services
             using (var client = new HttpClient())
             {
                 HttpResponseMessage response =
-                    client.PostAsJsonAsync("http://localhost:4835/api/movie/", movie).Result;
+                    client.PostAsJsonAsync("http://localhost:23512/api/movie/", movie).Result;
                 return response.Content.ReadAsAsync<Movie>().Result;
             }
         }
@@ -43,16 +43,16 @@ namespace MovieStoreGateWay.Services
             using (var client = new HttpClient())
             {
                 HttpResponseMessage response =
-                    client.PostAsJsonAsync("http://localhost:4835/api/movie/", movie).Result;
+                    client.PutAsJsonAsync("http://localhost:23512/api/movie/", movie).Result;
                 return response.Content.ReadAsAsync<Movie>().Result;
             }
         }
-        public Movie Delete(Movie movie)
+        public Movie Delete(int id)
         {
             using (var client = new HttpClient())
             {
                 HttpResponseMessage response =
-                    client.PostAsJsonAsync("http://localhost:4835/api/movie/", movie).Result;
+                    client.DeleteAsync("http://localhost:23512/api/movie/" + id).Result;
                 return response.Content.ReadAsAsync<Movie>().Result;
             }
         }

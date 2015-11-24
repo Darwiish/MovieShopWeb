@@ -203,6 +203,16 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MovieStoreGateWay\MovieStoreGateway.csproj">
+      <Project>{ce5d423f-2664-40d7-b205-db228e4b1bdb}</Project>
+      <Name>MovieStoreGateway</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MovieStoreMVCDto\MovieStoreMVCDto.csproj">
+      <Project>{5b42a314-85c0-4cc7-baf0-cc6505a04be7}</Project>
+      <Name>MovieStoreMVCDto</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

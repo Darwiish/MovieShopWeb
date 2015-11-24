@@ -1,0 +1,56 @@
+﻿@model MovieShopAssignment.ViewModels.ShoppingCart
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Your Shopping Cart</h2>
+@if(Model.OrderLines.FirstOrDefault() != null)
+{
+    <table class="table">
+    <tr>
+        <th>
+            @Html.DisplayName("Movie")
+        </th>
+        <th>
+            @Html.DisplayName("Price")
+        </th>
+        <th>
+            @Html.DisplayName("Amount")
+        </th>
+        <th>
+
+        </th>
+    </tr>
+    @foreach (var item in Model.OrderLines)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MovieVM.Movie.Title), @Html.DisplayFor(modelItem => item.MovieVM.Movie.Year)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MovieVM.Movie.Price)
+            </td>
+            <td>
+                @* A pretty bad way to edit the amount of movie copies for a purchase. This takes you to a seperate screen, where you can edit the individual orderline's amount value. *@
+                @Html.DisplayFor(modelItem => item.Amount)
+                @Html.ActionLink("Edit Amount", "EditView", new { Index = @Model.OrderLines.IndexOf(Model.OrderLines.FirstOrDefault(x => x.MovieVM.Movie.Id == item.MovieVM.Movie.Id)), Index2 = 2})
+            </td>
+            <td>
+                @Html.ActionLink("Remove", "Remove", new { MovID = item.MovieVM.Movie.Id })
+            </td>
+        </tr>
+    }
+</table>    
+}
+else
+{
+    @Html.Label("Your cart is empty, go buy something!")<br />
+}
+@Html.Display("Total:")<br />
+@if (Model.OrderLines.FirstOrDefault() != null)
+{
+    @Html.ActionLink("Checkout", "Checkout")
+}
+ 
+@Html.ActionLink("Clear Cart", "Clear") 
+@Html.ActionLink("Continue Shopping", "Return") 

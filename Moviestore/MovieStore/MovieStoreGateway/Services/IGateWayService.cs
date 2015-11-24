@@ -10,11 +10,11 @@ namespace MovieStoreGateWay.Services
     {
         IEnumerable<T> ReadAll();
 
-        T Get(T t);
+        T Get(int id);
 
         T Add(T t);
 
-        T Delete(T t);
+        T Delete(int id);
 
         T Edit(T t);
     }

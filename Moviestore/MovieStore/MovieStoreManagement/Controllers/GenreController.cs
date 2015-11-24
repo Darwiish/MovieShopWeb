@@ -1,4 +1,5 @@
-﻿
+﻿using MovieStoreGateWay;
+using MovieStoreMVCDto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,70 +8,70 @@ using System.Web.Mvc;
 
 namespace MovieStoreManagement.Controllers
 {
-//    public class GenreController : Controller
-//    {
-//        Facade fac = new Facade();
-//        public ActionResult Index()
-//        {
-//            return View(fac.GetGenryRepository().ReadAll());
-//        }
+    public class GenreController : Controller
+    {
+        Facade fac = new Facade();
+        public ActionResult Index()
+        {
+            return View(fac.GetGenerrGateway().ReadAll());
+        }
 
-//        [HttpGet]
-//        public ActionResult Create()
-//        {
-//            return View();
-//        }
+        [HttpGet]
+        public ActionResult Create()
+        {
+            return View();
+        }
 
-//        [HttpPost]
-//        [ValidateAntiForgeryToken]
-//        public ActionResult Create(Genre genre, FormCollection collection)
-//        {
-//            if (ModelState.IsValid)
-//            {
-//                fac.GetGenryRepository().Add(genre);
-//                return RedirectToAction("Index");
-//            }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(Genre genre, FormCollection collection)
+        {
+            if (ModelState.IsValid)
+            {
+                fac.GetGenerrGateway().Add(genre);
+                return RedirectToAction("Index");
+            }
             
-//                return View();
+                return View();
             
-//        }
+        }
 
-//        [HttpGet]
-//        public ActionResult Edit(int id)
-//        {
-//            return View(fac.GetGenryRepository().GetGenre(id));
-//        }
+        [HttpGet]
+        public ActionResult Edit(int id)
+        {
+            return View(fac.GetGenerrGateway().Get(id));
+        }
 
-//        // POST: Genre/Edit/5
-//        [HttpPost]
-//        public ActionResult Edit(Genre genre, FormCollection collection)
-//        {
-//            if (ModelState.IsValid)
-//            {
-//                fac.GetGenryRepository().UpdateGenre(genre);
-//                return RedirectToAction("Index");
-//            }
-//                return View();
-//        }
+        // POST: Genre/Edit/5
+        [HttpPost]
+        public ActionResult Edit(Genre genre, FormCollection collection)
+        {
+            if (ModelState.IsValid)
+            {
+                fac.GetGenerrGateway().Edit(genre);
+                return RedirectToAction("Index");
+            }
+                return View();
+        }
 
-//        [HttpGet]
-//        public ActionResult Delete(int id)
-//        {
-//            return View(fac.GetGenryRepository().GetGenre(id));
-//        }
+        [HttpGet]
+        public ActionResult Delete(int id)
+        {
+            return View(fac.GetGenerrGateway().Get(id));
+        }
 
-//        // POST: Genre/Delete/5
-//        [HttpPost]
-//        public ActionResult Delete(int id, FormCollection collection)
-//        {
-//            if (ModelState.IsValid)
-//            {
-//                fac.GetGenryRepository().DeleteGenre(id);
-//                return RedirectToAction("Index");
-//            }
+        // POST: Genre/Delete/5
+        [HttpPost]
+        public ActionResult Delete(int id, FormCollection collection)
+        {
+            if (ModelState.IsValid)
+            {
+                fac.GetGenerrGateway().Delete(id);
+                return RedirectToAction("Index");
+            }
 
-//            return View();
+            return View();
             
-//        }
-//    }
+        }
+    }
 }
