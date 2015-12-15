@@ -13,19 +13,19 @@ namespace MovieWebTest
     [TestFixture]
     public class MovieTest
     {
-        Facade facade = new Facade();
+    //    Facade facade = new Facade();
 
   
-        [Test]
-        public void Test_Get_Movie()
-        {
+    //    [Test]
+    //    public void Test_Get_Movie()
+    //    {
           
-            var mov = facade.GetMovieRepository().Get(1);
+    //        var mov = facade.GetMovieRepository().Get(1);
 
-            Assert.AreEqual(mov.Title, "Taken 3");
-            Assert.AreEqual(mov.Genre, "Action");
-            Assert.AreEqual(mov.Price, "102");
+    //        Assert.AreEqual(mov.Title, "Taken 3");
+    //        Assert.AreEqual(mov.Genre, "Action");
+    //        Assert.AreEqual(mov.Price, "102");
 
-        }
+    //    }
     }
 }
